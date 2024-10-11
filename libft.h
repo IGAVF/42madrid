@@ -6,7 +6,7 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 11:51:52 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/11 14:15:10 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/11 16:03:04 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,6 @@ char	*ft_strdup(const char *s);
 char	*ft_substr(const char *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
-int		ft_countnumb(int n);
 char	*ft_itoa(int n);
 char	**ft_split(char const *s, char c);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
