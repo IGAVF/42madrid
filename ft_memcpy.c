@@ -6,7 +6,7 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 14:36:36 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/09 16:26:48 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:38:34 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,22 +17,30 @@
 memory area to the dst memory area.*/
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	const char	*s;
-	char		*d;
+	unsigned char		*d;
+	const unsigned char	*s;
+	size_t				i;
 
-	s = (const char *)src;
-	d = (char *)dst;
-	while (n--)
-		*d++ = *s++;
+	if (dst == NULL && src == NULL)
+		return (NULL);
+	d = (unsigned char *)dst;
+	s = (const unsigned char *)src;
+	i = 0;
+	while (i < n)
+	{
+		d[i] = s[i];
+		i++;
+	}
 	return (dst);
 }
+
 /*
 int main()
 {
-    char src1[] = "Hola, mundo!";
-    char dst1[20];
-    
-    ft_memcpy(dst1, src1, strlen(src1) + 1);// +1 para incluir el carácter nulo
-    printf("Original: %s\nCopia: %s\n\n", src1, dst1);
+	char src1[] = "Hola, mundo!";
+	char dst1[20];
+	
+	ft_memcpy(dst1, src1, strlen(src1) + 1);// +1 para incluir el carácter nulo
+	printf("Original: %s\nCopia: %s\n\n", src1, dst1);
 	return (0);
 }*/

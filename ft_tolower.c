@@ -6,7 +6,7 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 15:03:37 by iguillen          #+#    #+#             */
-/*   Updated: 2024/09/19 11:02:27 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:38:32 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,16 @@
 
 int	ft_tolower(int c)
 {
-	if (c >= 65 && c <= 90)
+	if (c >= 'A' && c <= 'Z')
 		return (c + 32);
-	return (0);
+	return (c);
 }
 
 /*int main(void)
 {
 	char c;
 
-	c = 'F';
+	c = 'f';
 	printf("%c -> %c\n", c, ft_tolower(c));
 	return (0);
 }*/

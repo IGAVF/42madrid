@@ -6,7 +6,7 @@
 #    By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/02 18:33:08 by iguillen          #+#    #+#              #
-#    Updated: 2024/10/09 16:18:44 by iguillen         ###   ########.fr        #
+#    Updated: 2024/10/11 15:41:55 by iguillen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,6 +15,8 @@ CC = gcc
 RM = rm -rf
 
 NAME = libft.a
+
+BONUS_NAME = .bonus
 
 SRCS = ft_isalnum.c	 \
 	   ft_isascii.c  \
@@ -51,33 +53,45 @@ SRCS = ft_isalnum.c	 \
 	   ft_putstr_fd.c \
 	   ft_putendl_fd.c \
 	   ft_putnbr_fd.c \
-	   ft_lstnew.c   \
-	   ft_lstadd_front.c \
-	   ft_lstsize.c  \
-	   ft_lstlast.c  \
-	   ft_lstadd_back.c \
-	   ft_lstdelone.c \
-	   ft_lstclear.c \
-	   ft_lstiter.c  \
+	   
 	   
 FLAGS = -Wall -Wextra -Werror -c
 
 OBJS = $(SRCS:.c=.o)
+
+BONUSSRC = ft_lstnew_bonus.c   \
+	   ft_lstadd_front_bonus.c \
+	   ft_lstsize_bonus.c  \
+	   ft_lstlast_bonus.c  \
+	   ft_lstadd_back_bonus.c \
+	   ft_lstdelone_bonus.c \
+	   ft_lstclear_bonus.c \
+	   ft_lstiter_bonus.c  \
+
+BONUSOBJ = $(BONUSSRC:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rc $(NAME) $(OBJS)
 
+bonus: $(BONUSOBJ)
+
+#Toma los archivos objetos del bonus y los añade a la librería estática utilizando ar
+$(BONUS_NAME): $(BONUSOBJ)
+		ar rcs $(NAME) $(BONUSOBJ)
+		ar rcs $(BONUS_NAME) $(BONUSOBJ)
+
+
 %.o: %.c
 	$(CC) $(FLAGS) -o $@ $<
 
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) $(BONUS_NAME) $(BONUSOBJ)
 
 fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus

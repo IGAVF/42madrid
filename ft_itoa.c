@@ -6,37 +6,59 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 11:42:57 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/09 16:25:12 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/11 15:37:18 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //converts an integer to a string.
+#include <stdlib.h>
+#include <limits.h>
+
+static int	ft_countnumb(long n)
+{
+	int	cont;
+
+	cont = 1;
+	if (n < 0)
+	{
+		n = -n;
+		cont++;
+	}
+	while (n >= 10)
+	{
+		n /= 10;
+		cont++;
+	}
+	return (cont);
+}
+
 char	*ft_itoa(int n)
 {
 	char	*result;
 	int		size;
-	int		i;
+	long	num;
 
-	i = 0;
-	size = ft_countnumb(n);
-	result = malloc(size * sizeof(char) + 1);
+	num = n;
+	size = ft_countnumb(num);
+	result = malloc(size + 1);
 	if (!result)
 		return (NULL);
-	if (n < 0)
-	{
-		i = 1;
-		result[0] = '-';
-		n = n * -1;
-	}
 	result[size] = '\0';
-	while (--size >= i)
+	if (num < 0)
 	{
-		result[size] = (n % 10) + '0';
-		n = n / 10;
+		result[0] = '-';
+		num = -num;
+	}
+	while (size > (n < 0))
+	{
+		size--;
+		result[size] = (num % 10) + '0';
+		num /= 10;
 	}
 	return (result);
 }
+
 /*int main(int argc, char *argv[])
 {
     (void)argc;
