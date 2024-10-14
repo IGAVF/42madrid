@@ -6,7 +6,7 @@
 #    By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/02 18:33:08 by iguillen          #+#    #+#              #
-#    Updated: 2024/10/11 16:56:43 by iguillen         ###   ########.fr        #
+#    Updated: 2024/10/14 16:06:38 by iguillen         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,7 +58,8 @@ BSOURCES = ft_lstnew_bonus.c   \
 	   ft_lstadd_back_bonus.c \
 	   ft_lstdelone_bonus.c \
 	   ft_lstclear_bonus.c \
-	   ft_lstiter_bonus.c  
+	   ft_lstiter_bonus.c  \
+	   ft_lstmap_bonus.c
 
 OBJECTS = $(SOURCES:.c=.o)
 BOBJECTS = $(BSOURCES:.c=.o)

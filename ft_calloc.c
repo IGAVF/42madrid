@@ -6,7 +6,7 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 17:59:16 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/09 16:22:41 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/14 15:52:11 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,23 +17,20 @@
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;
-	char	*bite_ptr;
 	size_t	total_size;
-	size_t	i;
 
-	total_size = (nmemb * size);
-	ptr = malloc (total_size);
+	if (nmemb == 0 || size == 0)
+		return (malloc(0));
+	total_size = nmemb * size;
+	if (total_size / nmemb != size)
+		return (NULL);
+	ptr = malloc(total_size);
 	if (!ptr)
 		return (NULL);
-	bite_ptr = (char *)ptr;
-	i = 0;
-	while (i <= total_size)
-	{
-		bite_ptr[i] = 0;
-		i++;
-	}
+	ft_bzero(ptr, total_size);
 	return (ptr);
 }
+
 /*int main()
 {
 	int *arr;

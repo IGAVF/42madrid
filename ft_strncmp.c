@@ -6,7 +6,7 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 13:27:25 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/09 16:30:55 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/14 16:04:32 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,18 @@
 #include "libft.h"
 #include <string.h>
 //compare two strings and return =,<,>.
-int	strncmp(const char *s1, const char *s2, size_t n)
+#include <stddef.h>
+
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	while (n-- && *s1 && *s2)
+	size_t	i;
+
+	i = 0;
+	while (i < n && (s1[i] || s2[i]))
 	{
-		if ((unsigned)*s1 -(unsigned)*s2 != 0)
-			return (*s1 - *s2);
-		s1++;
-		s2++;
+		if ((unsigned char)s1[i] != (unsigned char)s2[i])
+			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+		i++;
 	}
 	return (0);
 }
