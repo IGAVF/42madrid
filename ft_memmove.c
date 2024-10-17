@@ -6,13 +6,11 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 11:57:39 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/11 15:38:35 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:36:36 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
-#include <string.h>
 //The memmove() function copies n bytes from memory area src
 //to memory area dest.
 //Memory areas may overlap.

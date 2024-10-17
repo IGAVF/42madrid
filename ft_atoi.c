@@ -6,12 +6,10 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 13:12:08 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/09 16:20:01 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:33:50 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 //convert a string representation of an integer
 //to its corresponding integer value.

@@ -6,14 +6,11 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 15:23:28 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/09 16:26:13 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:36:12 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
-#include <string.h>
-#include <stddef.h>
 /*-The memcmp() function compares the first n bytes of the memory areas
 s1 and s2.
 -returns an integer less than, equal to, or greater than zero*/

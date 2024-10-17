@@ -6,7 +6,7 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 14:16:11 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/09 16:31:44 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:42:16 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,14 +33,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (NULL);
 	ft_strlcpy(str, s1 + start, end - start + 1);
 	return (str);
-	printf("start: %zu, end: %zu\n", start, end);
-	str = (char *)malloc(sizeof(char) * (end - start + 1));
-	if (!str)
-		return (NULL);
-	ft_strlcpy(str, s1 + start, end - start + 1);
-	printf("Trimmed string before return: '%s'\n", str);
-	return (str);
 }
+
 /*
 int main(void)
 {

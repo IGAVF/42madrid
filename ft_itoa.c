@@ -6,14 +6,12 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 11:42:57 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/11 15:37:18 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:35:38 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 //converts an integer to a string.
-#include <stdlib.h>
-#include <limits.h>
 
 static int	ft_countnumb(long n)
 {

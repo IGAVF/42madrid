@@ -6,14 +6,11 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 10:48:29 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/09 16:30:08 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:37:10 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
-#include <string.h>
-#include <stddef.h>
 //adds the string src to the end of dst.
 //will add at most size - strlen(dst) - 1 characters.
 /*Unlike strncat(), size is the full size 

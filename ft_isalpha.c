@@ -6,11 +6,10 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/16 15:16:05 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/09 16:23:44 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:35:10 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 int	ft_isalpha(int x)

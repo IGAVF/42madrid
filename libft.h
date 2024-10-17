@@ -6,7 +6,7 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 11:51:52 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/14 16:05:31 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:48:36 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@
 # include <limits.h>
 # include <stdio.h>
 # include <stddef.h>
-# include <string.h>
 # include <ctype.h>
 
 typedef struct s_list

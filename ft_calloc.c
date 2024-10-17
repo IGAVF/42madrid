@@ -6,12 +6,10 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/26 17:59:16 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/14 15:52:11 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:34:08 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
 #include "libft.h"
 //used for dynamic memory allocation.
 void	*ft_calloc(size_t nmemb, size_t size)

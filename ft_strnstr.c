@@ -6,14 +6,11 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 11:25:29 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/09 16:31:13 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:38:29 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
-#include <string.h>
-#include <stddef.h>
 //Locates a substring in a string, with length limit.
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)

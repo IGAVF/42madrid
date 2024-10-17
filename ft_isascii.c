@@ -6,7 +6,7 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 12:30:07 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/09 16:24:10 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:35:15 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ in the current locale, can be represented as a 7-bit ascii character
 -It is between 0 and 127 because it has the value of 7 bits,
 then there is a duplicate that increases the value to include in ascii.
 */
-#include <stdio.h>
 #include "libft.h"
 
 int	ft_isascii(int x)

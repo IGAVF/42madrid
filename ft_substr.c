@@ -6,12 +6,10 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/30 12:23:05 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/09 16:32:04 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:38:43 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
 #include "libft.h"
 //extract a part of a string.
 

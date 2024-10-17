@@ -6,13 +6,11 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/18 14:17:12 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/09 16:31:28 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:38:35 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <stdio.h>
 
 char	*ft_strrchr(const char *s, int c)
 {

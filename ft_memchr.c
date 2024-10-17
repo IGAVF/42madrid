@@ -6,13 +6,11 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 12:56:49 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/11 15:38:28 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:36:00 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
-#include <string.h>
 /*Locate the first occurrence of c (converted to an
 unsigned char) in the string */
 void	*ft_memchr(const void *s, int c, size_t n)

@@ -6,11 +6,10 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/17 13:16:32 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/09 16:24:56 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:35:29 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 //defines whether a character is printable in ascii.
 int	ft_isprint(int x)

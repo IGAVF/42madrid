@@ -6,12 +6,10 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 12:07:11 by iguillen          #+#    #+#             */
-/*   Updated: 2024/09/19 12:52:13 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:36:42 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 #include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)

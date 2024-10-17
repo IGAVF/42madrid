@@ -6,12 +6,10 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 14:36:36 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/11 15:38:34 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:36:27 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 #include "libft.h"
 /*The memcpy() function copies n bytes from the src 
 memory area to the dst memory area.*/

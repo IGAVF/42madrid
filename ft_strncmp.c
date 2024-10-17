@@ -6,15 +6,12 @@
 /*   By: iguillen <iguillen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 13:27:25 by iguillen          #+#    #+#             */
-/*   Updated: 2024/10/14 16:04:32 by iguillen         ###   ########.fr       */
+/*   Updated: 2024/10/16 12:38:19 by iguillen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
-#include <string.h>
 //compare two strings and return =,<,>.
-#include <stddef.h>
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
